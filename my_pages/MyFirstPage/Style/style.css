@@ -1,0 +1,268 @@
+@font-face {
+  font-family: Shtempel;
+  src: url("../fonts/Shtempel.otf");
+}
+
+@font-face {
+  font-family: WWWest;
+  src: url("../fonts/WWWest.ttf");
+}
+
+@font-face {
+  font-family: verdana;
+  src: url("../fonts/verdana.ttf");
+}
+
+@font-face {
+  font-family: Callygraph;
+  src: url("../fonts/Callygraph.otf");
+}
+
+/* Начало общих стилей для всех страниц */
+body {
+  width: 100%;
+  padding: 0px;
+  padding-left: 0;
+  background-image: url(../images/fon2.png);
+}
+
+.div_opacity {
+  width: 100%;
+  height: 3000px;
+  background-color: rgba(204, 199, 176, 0.5);
+  padding-left: 0px;
+}
+
+/* Styles for header*/
+header {
+  height: 78px;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  background: #ccc7b0;
+
+  position: fixed;
+  top: 0px;
+  left: 0;
+}
+.title{
+padding-top: 70px
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  width: 1000px;
+  display: flex;
+  text-decoration: none;
+}
+
+.menu img {
+  width: 75px;
+  height: 75px;
+}
+
+.menu li {
+  letter-spacing: 2px;
+  text-align: center;
+  list-style: none;
+  padding-top: 6px;
+  padding-left: 10px
+}
+
+.menu li a {
+  font-family: "Shtempel", sans-serif;
+  font-size: 2em;
+  color: #a24252;
+  display: table-cell;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 220px;
+  line-height: 60px;
+  border: 1px solid #6b2148;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #636060;
+
+}
+
+.menu li a:hover {
+  background-color: #89a8a3;
+  color: #C92C80;
+}
+
+.menu li a:active {
+  background-color: #391d4d;
+  color: red;
+}
+
+/*styles for h1*/
+.title span {
+  font-family: "Shtempel", sans-serif;
+  color: #a24252;
+  font-size: 50px;
+}
+
+/*styles for main */
+.body_main div p {
+  font-size: 30px;
+  font-family: verdana, sans-serif;
+}
+
+.body_main div p:first-letter {
+  font-size: 50px;
+  color: #a24252;
+}
+
+/*styles for Catalog*/
+.catalog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.catalog div {
+  margin: auto;
+  width: 200px;
+  height: 600px;
+}
+
+.catalog div p {
+  margin: auto;
+  text-align: center;
+  outline: inherit;
+  outline-color: black;
+  outline-width: 5px;
+}
+
+.catalog div p a {
+  text-decoration: none;
+  color: #a24252;
+  text-shadow: 3px 5px 5px black;
+  font-weight: 650;
+  font-size: 40px;
+  font-family: verdana, sans-serif;
+}
+
+.catalog div p img {
+  outline: 5px solid #391d4d;
+}
+
+.catalog div p img:hover {
+  outline: NONE;
+}
+
+/*Styles for Contacts*/
+.form {
+  width: 400px;
+  height: auto;
+}
+
+.form input[type="text"], textarea, input[type="email"] {
+  color: #6b2148;
+  text-transform: capitalize;
+}
+
+.form input[type="text"]:hover, textarea:hover, input[type="email"]:hover {
+  background-color: #ccc7b0;
+}
+
+.form input[type="text"], input[type="email"] {
+  width: 50%;
+  height: 20px;
+}
+
+.form textarea {
+  width: 350px;
+  height: 250px;
+}
+
+.form input[type="text"]:focus, textarea:focus, input[type="email"]:focus {
+  background-color: #a24252;
+  color: red;
+}
+
+.form span {
+  font-size: 20px;
+  width: 50%;
+  display: inline-block;
+}
+
+.adress {
+  text-align: center;
+  width: 350px;
+  border: 1px solid gray;
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+.adress ul {
+  list-style: none;
+}
+
+/*Styles for Product_page*/
+.body_product_page p:first-letter {
+  font-size: 50px;
+  font-family: Callygraph, sans-serif;
+  font-weight: 500;
+  color: #a24252;
+  text-transform: capitalize;
+}
+
+.body_product_page {
+  width: 300px;
+  text-align: center;
+  background: rgba(150, 150, 150, 0.6);
+}
+
+.body_product_page h3 {
+  width: 300px;
+  background-color: #ccc;
+  text-align: center;
+  color: #a24252;
+}
+
+.body_product_page a img {
+  outline: 5px solid #391d4d;
+}
+
+.body_product_page a img:hover {
+  outline: none;
+}
+
+.list {
+  list-style-image: url(../images/mini.png);
+  text-align: left;
+}
+
+.body_product_page h1 {
+  font-family: verdana, sans-serif;
+  text-transform: uppercase;
+  color: #a24252;
+}
+
+/*Styles for footer*/
+footer {
+  border-top: 2px solid gray;
+}
+
+footer span {
+  font-size: 20px;
+  color
+}
+/*Submenu*/
+.sub{
+  padding-left: 0;
+}
+.submenu{
+  display: none;
+  position: absolute;
+  left: 268px;
+  top: 75px;
+}
+
+.submenu a{
+  background-color: #ccc7b0;
+}
+
+.sub:hover .submenu{
+  display: block;
+}
