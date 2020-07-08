@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.svg_sprite {
+  display: none;
+}
+.svg {
+  fill: #555555;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.svg:hover {
+  fill: #c7b299;
+}

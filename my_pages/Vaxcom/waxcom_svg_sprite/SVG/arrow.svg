@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="73" viewBox="0 0 40 73">
+    <defs>
+        <path id="fuiya" d="M188.026 547.98l-38.021-36.482 38.021-36.48 1.969 2.004-35.929 34.476 35.929 34.479z" />
+    </defs>
+    <g>
+        <g opacity=".5" transform="translate(-150 -475)">
+            <use xlink:href="#fuiya" />
+            <use fill="#fff" xlink:href="#fuiya" />
+        </g>
+    </g>
+</svg>
