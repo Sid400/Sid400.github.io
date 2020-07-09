@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 15px 0 0 0 ;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+.customer_info {
+  min-height: 50px;
+  padding: 10px 0 10px 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr;
+      grid-template-columns: 100px 1fr;
+}
+.customer_orders_info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px 1fr;
+      grid-template-columns: 120px 1fr;
+  row-gap: 5px;
+}
+.order {
+  grid-column: 1 / 3;
+  padding: 10px 0 10px 0;
+  background-color: #caa8a8;
+}
