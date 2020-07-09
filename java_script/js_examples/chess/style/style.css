@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.color2 {
+  background-color: black;
+}
+.color1 {
+  background-color: white;
+  color: white;
+}
+.square,
+.words,
+.number {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+}

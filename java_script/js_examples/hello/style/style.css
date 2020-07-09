@@ -1,0 +1,25 @@
+@font-face {
+  font-family: predator;
+  src: url("../fonts/PREDATOR.TTF");
+}
+.predator {
+  font-family: predator;
+  font-weight: 600;
+  font-size: 3em;
+}
+.normal {
+  font-weight: 600;
+  font-size: 3em;
+  letter-spacing: 0.3em;
+}
+#test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  width: 300px;
+  height: 70px;
+}
