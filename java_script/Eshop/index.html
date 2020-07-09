@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style.css">
+  <title>eShop</title>
+</head>
+
+<body>
+  <main>
+    <div id="app">
+      <header>
+        <search_panel v-model="searchline" :search_goods="search_goods"></search_panel>
+        <button class="button cart-button" v-on:click="isVisibleCart = !isVisibleCart ">Корзина<div class="bin-counter">
+            {{bin.length}}</div></button>
+        <transition name="fade">
+          <div class="bin" v-if="isVisibleCart">
+            <bin_block v-for="item in bin" :bin_params="item" :key="goods.id">
+              <item_name :id="item.id" :extratdata="extract_dataproduct_by_id">
+              </item_name>
+              <item_price :id="item.id" :extratdata="extract_dataproduct_by_id">
+              </item_price>
+              <bin_count_item :count="item.count"></bin_count_item>
+              <bin_totalprice_item :count="item.count" :extratdata="extract_dataproduct_by_id" :id="item.id">
+              </bin_totalprice_item>
+              <button_react :id="item.id" :action="add_cart">Добавить</button_react>
+              <button_react :id="item.id" :action="remove_cart">Убрать</button_react>
+            </bin_block>
+            <h3 class="empty-bin_massage" v-if="bin.length == 0">Корзина пуста</h3>
+          </div>
+        </transition>
+        <button class="button buy-button">Оформить</button>
+      </header>
+      <h2>Каталог</h2>
+      <div class="goods-list">
+        <cart_block v-for="item in filtredGoods" :goodscart="item" :key="goods.id">
+          <item_name :id="item.id_product" :extratdata="extract_dataproduct_by_id">
+          </item_name>
+          <item_price :id="item.id_product" :extratdata="extract_dataproduct_by_id">
+          </item_price>
+          <button_react :id="item.id_product" :action="add_cart">Добавить</button_react>
+        </cart_block>
+        <h3 v-if="filtredGoods.length == 0">Товары не не найдены</h3>
+        </cart>
+      </div>
+      <button class="debuger-button" v-on:click="log(bin)">Debuger</button>
+      <error_window v-if="server_error" :message="server_error_message"></error_window>
+    </div>
+  </main>
+  <script src="js/new_xhr.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/MyVue.js"></script>
+</body>
+
+</html>

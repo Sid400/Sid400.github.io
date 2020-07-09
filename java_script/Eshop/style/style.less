@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    text-align: end;
+}
+
+
+main,
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.button {
+    background-color: rgb(197, 197, 197);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+    height: 30px;
+
+
+    &:hover {
+        background-color: rgb(212, 209, 209);
+    }
+
+    ;
+
+    &:active {
+        box-shadow: inset 5px 5px 5px rgb(149, 149, 161);
+    }
+}
+
+#app {
+    position: relative;
+}
+
+.buy-button {
+    margin-left: 10px;
+}
+
+.cart-button {
+    position: relative;
+    margin-left: auto;
+}
+
+.search-button {
+    margin-left: 10px;
+}
+
+.bin-counter {
+    position: absolute;
+    top: 2px;
+    left: 70%;
+    background-color: gold;
+    min-width: 25px;
+    min-height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+}
+
+.goods-item {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.goods-item_name {
+    text-transform: uppercase;
+}
+
+.goods-item_price {
+    text-align: end;
+}
+
+.goods-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-bottom: 25px;
+
+}
+
+.bin {
+    padding: 0 10px 10px 10px;
+    position: absolute;
+    top: 50px;
+   right: 5%;
+   background-color: rgba(128, 128, 128, 0.5);
+   min-width: 310px;
+text-align: center;
+}
+
+.empty-bin_massage{
+    padding: 10px 0 0 0 ;
+}
+
+.debuger-button {
+    position: absolute;
+    bottom: -100px;
+}
+
+.error_window{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0 ;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+.error_massage{
+width: 300px;
+height: 200px;
+background-color: white;
+}
+
+.fade-enter-active, .fade-leave-active{
+    opacity: 1;
+    transition: .5s;
+    
+}
+
+.fade-enter, .fade-leave-to{
+    opacity: 0;
+
+}

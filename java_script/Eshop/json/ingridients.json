@@ -1,0 +1,49 @@
+{
+    "data" : [
+{
+    "name": "small_bun",
+    "price": 10,
+    "nutritional_value": 20
+},
+{
+    "name": "big_bun",
+    "price": 20,
+    "nutritional_value": 30
+},
+{
+    "name": "small_cutlets",
+    "price": 30,
+    "nutritional_value": 80
+},
+{
+    "name": "big_cutlets",
+    "price": 50,
+    "nutritional_value": 120
+},
+{
+    "name": "salad",
+    "price": 10,
+    "nutritional_value": 5
+},
+{
+    "name": "cheese",
+    "price": 25,
+    "nutritional_value": 15
+},
+{
+    "name": "potato",
+    "price": 30,
+    "nutritional_value": 20
+},
+{
+    "name": "spices",
+    "price": 15,
+    "nutritional_value": 1
+},
+{
+    "name": "mayonnaise",
+    "price": 10,
+    "nutritional_value": 15
+}
+]
+}
