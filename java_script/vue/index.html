@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>StudyVue</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{massage}}</h1>
+        <div class="modul">
+            <h2 class="separator">Директива V-bind</h2>
+            <p class="description">v-bind:title</p>
+            <span class="example" v-bind:title="title">Наведи на меня</span>
+            <p class="description">v-bind:class=democlass</p>
+            <div class="example" v-bind:class=democlass></div>
+        </div>
+        <div class="modul">
+            <h2 class="separator">Директива V-on:</h2>
+            <p class="description">К кнопке прописана директива v-on:click="seen =!seen"</p>
+            <button class="btn" v-on:click="seen = !seen">Тык</button>
+            <span class="example">Значение атрибута seen: {{seen}}</span>
+            <p class="description">Директива v-on:click="add_count", может принимать методы VUE</p>
+            <button class="btn" v-on:click="add_count()">Тык</button>
+            <span class="example">Значение атрибута count: {{count}}</span>
+        </div>
+        <div class="modul">
+            <h2 class="separator">Директивы V-if: и V-show:</h2>
+            <p class="description">v-show="seen", блок будет отображаться только, при значении SEEN == true</p>
+            <div class="block example" v-show="seen"></div>
+            <p class="description">v-if="seen", блок будет выводиться в поток только, при значении SEEN == true</p>
+            <div class="block example" v-if="seen"></div>
+        </div>
+        <div class="modul">
+            <h2 class="separator">Директива V-for:</h2>
+            <p class="description">v-for="item in arrayofobject, принимает массив обьектов, создает копии тэга согласно
+                количеству обьектов в массиве. Внутри тэга можно обращаться к элементам, как в обычном for"</p>
+            <p class="example" v-for="item in arrayofobject"> {{item.text}}{{item.item_N}} </p>
+        </div>
+        <div class="modul">
+            <h2 class="separator">Директива V-model:</h2>
+            <p class="description">v-model:"massage2", связывает привязывает данные к тэгу.</p>
+            <div class="example">{{massage2}}</div>
+            <input type="text" v-model="massage2">
+        </div>
+        <div class="modul">
+            <h2 class="separator">Компоненты</h2>
+            <p class="description">Все подробности в файле mvue.js</p>
+           <Component1></Component1>
+           <Component2></Component2>
+
+        </div>
+        <div class="modul">
+                <h2 class="separator">Директива V-</h2>
+                <p class="description">v-</p>
+            </div>
+    </div>
+</body>
+<script src="js/vue_dev.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mvue.js"></script>
+
+</html>
